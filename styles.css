@@ -67,6 +67,10 @@ input:focus {
   border: 1px solid black;
 }
 
+input.err-box{
+  border: 1px solid red;
+}
+
 .submit {
   text-align: center;
   font-weight: 500;

@@ -11,15 +11,16 @@ submitButton.addEventListener("click", function(event) {
     document.querySelector("#fname-err").classList.add("err-on");
     document.querySelector("#fname-err-state").classList.remove("err-state-off");
     document.querySelector("#fname-err-state").classList.add("err-state-on");
+    document.querySelector("#fname-ip").classList.add("err-box");
     x++;
   }
 
   if (lName === "") {
-
     document.querySelector("#lname-err").classList.remove("err-off");
     document.querySelector("#lname-err").classList.add("err-on-" + x);
     document.querySelector("#lname-err-state").classList.remove("err-state-off");
     document.querySelector("#lname-err-state").classList.add("err-state-on");
+    document.querySelector("#lname-ip").classList.add("err-box");
     x++;
   }
 
@@ -29,6 +30,7 @@ submitButton.addEventListener("click", function(event) {
     document.querySelector("#email-err").classList.add("err-on-" + x );
     document.querySelector("#email-err-state-empty").classList.remove("err-state-off");
     document.querySelector("#email-err-state-empty").classList.add("err-state-on");
+    document.querySelector("#email-ip").classList.add("err-box");
     x++;
   } else if (!validateEmail(email)) {
 
@@ -36,6 +38,7 @@ submitButton.addEventListener("click", function(event) {
     document.querySelector("#email-err").classList.add("err-on-" + x);
     document.querySelector("#email-err-state-invalid").classList.remove("err-state-off");
     document.querySelector("#email-err-state-invalid").classList.add("err-state-on");
+    document.querySelector("#email-ip").classList.add("err-box");
     x++;
   }
 
@@ -45,6 +48,7 @@ submitButton.addEventListener("click", function(event) {
     document.querySelector("#pass-err").classList.add("err-on-" + x);
     document.querySelector("#pass-err-state").classList.remove("err-state-off");
     document.querySelector("#pass-err-state").classList.add("err-state-on");
+    document.querySelector("#pass-ip").classList.add("err-box");
   }
 
 });
