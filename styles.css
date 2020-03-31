@@ -1,0 +1,270 @@
+body {
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+}
+
+.left-side {
+  width: 50%;
+  padding: 50px;
+  color: #fff;
+  margin-left: 140px;
+  margin-top: 200px;
+}
+
+.right-side {
+  margin: 100px 140px 100px 10px;
+}
+
+.main-text {
+  font-size: 45px;
+  line-height: 1.25;
+}
+
+.cta {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(128, 128, 128, 0.25);
+}
+
+span {
+  color: rgba(255, 255, 255);
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-bottom: 25px;
+  background-color: #fff;
+  border-radius: 2.5%;
+  box-shadow: 0 10px rgba(128, 128, 128, 0.25);
+}
+
+input {
+  font-size: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  box-shadow: 0 0 grey inset;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: hsl(249, 10%, 26%, 0.9);
+  font-weight: 500;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid black;
+}
+
+.submit {
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+  width: 427.687px;
+}
+
+.t\&c {
+  font-size: 10px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+}
+
+.t\&c>a {
+  color: red;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.err-off {
+  display: none;
+}
+
+#fname-err.err-on {
+  position: absolute;
+  top: 270px;
+  right: 210px;
+}
+
+#lname-err.err-on-0 {
+  position: absolute;
+  top: 350px;
+  right: 210px;
+}
+
+#lname-err.err-on-1 {
+  position: absolute;
+  top: 387px;
+  right: 210px;
+}
+
+#email-err.err-on-0 {
+  position: absolute;
+  top: 430px;
+  right: 210px;
+}
+
+#email-err.err-on-1 {
+  position: absolute;
+  top: 467px;
+  right: 210px;
+}
+
+#email-err.err-on-2 {
+  position: absolute;
+  top: 504px;
+  right: 210px;
+}
+
+#pass-err.err-on-0 {
+  position: absolute;
+  top: 510px;
+  right: 210px;
+}
+
+#pass-err.err-on-1 {
+  position: absolute;
+  top: 547px;
+  right: 210px;
+}
+
+#pass-err.err-on-2 {
+  position: absolute;
+  top: 584px;
+  right: 210px;
+}
+
+#pass-err.err-on-3 {
+  position: absolute;
+  top: 621px;
+  right: 210px;
+}
+
+.err-state-on {
+  font-size: 10px;
+  font-style: italic;
+  text-align: right;
+  color: red;
+}
+
+.err-state-off {
+  display: none;
+}
+
+@media(max-width: 375px) {
+  body {
+    flex-direction: column;
+    text-align: center;
+    background-image: url(images/bg-intro-mobile.png);
+  }
+
+  .left-side {
+    width: 90%;
+    padding: 0;
+    margin: 50px auto 0;
+  }
+
+  .main-text {
+    font-size: 30px;
+  }
+
+  .right-side {
+    margin: 50px 0;
+  }
+
+  .cta {
+    padding: 20px 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form {
+    padding: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .submit {
+    width: auto;
+  }
+
+  .t\&c {
+    width: 70%;
+    margin: 20px auto 0;
+  }
+
+  #fname-err.err-on {
+    position: absolute;
+    top: 529px;
+    right: 57px;
+  }
+
+  #lname-err.err-on-0 {
+    position: absolute;
+    top: 608px;
+    right: 57px;
+  }
+
+  #lname-err.err-on-1 {
+    position: absolute;
+    top: 645px;
+    right: 57px;
+  }
+
+  #email-err.err-on-0 {
+    position: absolute;
+    top: 687px;
+    right: 57px;
+  }
+
+  #email-err.err-on-1 {
+    position: absolute;
+    top: 723px;
+    right: 57px;
+  }
+
+  #email-err.err-on-2 {
+    position: absolute;
+    top: 757px;
+    right: 57px;
+  }
+
+  #pass-err.err-on-0 {
+    position: absolute;
+    top: 767px;
+    right: 57px;
+  }
+
+  #pass-err.err-on-1 {
+    position: absolute;
+    top: 803px;
+    right: 57px;
+  }
+
+  #pass-err.err-on-2 {
+    position: absolute;
+    top: 840px;
+    right: 57px;
+  }
+
+  #pass-err.err-on-3 {
+    position: absolute;
+    top: 875px;
+    right: 57px;
+  }
+
+}
